@@ -1,0 +1,97 @@
+SERVICES variable is ignored if EAGER_SERVICE_LOADING=0.
+Persistence mode was activated using the DATA_DIR variable. DATA_DIR is deprecated and its value is ignored. The data is instead stored into /var/lib/localstack/state in the LocalStack volume.
+2022-12-30T11:55:52.418  WARN --- [  MainThread] localstack.deprecations    : DEFAULT_REGION is deprecated (since 0.12.7) and will be removed in upcoming releases of LocalStack! LocalStack now has full multi-region support. Please remove this environment variable.
+2022-12-30T11:55:52.418  WARN --- [  MainThread] localstack.deprecations    : DATA_DIR is deprecated (since 1.0.0) and will be removed in upcoming releases of LocalStack! Please use PERSISTENCE instead. The state will be stored in your LocalStack volume in the state/ directory.
+2022-12-30T11:55:54.887  WARN --- [-functhread5] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2022-12-30T11:55:54.887  WARN --- [-functhread5] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2022-12-30T11:55:54.891  INFO --- [-functhread5] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
+2022-12-30T11:55:54.891  INFO --- [-functhread5] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
+2022-12-30T11:55:55.016  INFO --- [  MainThread] localstack.utils.bootstrap : Execution of "start_runtime_components" took 903.10ms
+2022-12-30T11:58:23.492  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:23.539  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:23.616  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:23.624  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:58:23.678  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:23.741  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:58:23.812  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:23.872  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:58:23.976  INFO --- [   asgi_gw_0] localstack.request.http    : POST /000000000000/dummyQueue => 200
+2022-12-30T11:58:24.056  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:24.110  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:58:24.170  INFO --- [   asgi_gw_1] localstack.request.http    : POST /000000000000/dummyQueue.fifo => 200
+2022-12-30T11:58:24.230  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:24.294  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:24.355  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:58:24.443  INFO --- [   asgi_gw_1] localstack.request.http    : POST /000000000000/dummyQueue => 200
+2022-12-30T11:58:24.534  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:24.582  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:58:24.638  INFO --- [   asgi_gw_0] localstack.request.http    : POST /000000000000/dummyQueue => 200
+2022-12-30T11:58:24.697  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:24.776  INFO --- [   asgi_gw_0] localstack.request.http    : POST /000000000000/testStandardQueue => 200
+2022-12-30T11:58:24.854  INFO --- [   asgi_gw_1] localstack.request.http    : POST /000000000000/testFifoQueue.fifo => 200
+2022-12-30T11:58:36.703  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:36.780  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:36.873  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:36.885  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:58:36.940  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:36.996  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:58:37.081  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:37.135  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:58:37.204  INFO --- [   asgi_gw_1] localstack.request.http    : POST /000000000000/dummyQueue => 200
+2022-12-30T11:58:37.286  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:37.351  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:58:37.431  INFO --- [   asgi_gw_0] localstack.request.http    : POST /000000000000/dummyQueue.fifo => 200
+2022-12-30T11:58:37.486  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:37.534  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:37.589  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:58:37.668  INFO --- [   asgi_gw_0] localstack.request.http    : POST /000000000000/dummyQueue => 200
+2022-12-30T11:58:37.731  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:37.778  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:58:37.859  INFO --- [   asgi_gw_1] localstack.request.http    : POST /000000000000/dummyQueue => 200
+2022-12-30T11:58:37.914  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:37.972  INFO --- [   asgi_gw_1] localstack.request.http    : POST /000000000000/testStandardQueue => 200
+2022-12-30T11:58:38.048  INFO --- [   asgi_gw_0] localstack.request.http    : POST /000000000000/testFifoQueue.fifo => 200
+2022-12-30T11:58:47.829  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:47.896  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:47.980  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:47.989  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:58:48.042  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:48.095  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:58:48.164  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:48.215  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:58:48.306  INFO --- [   asgi_gw_0] localstack.request.http    : POST /000000000000/dummyQueue => 200
+2022-12-30T11:58:48.367  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:48.425  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:58:48.509  INFO --- [   asgi_gw_1] localstack.request.http    : POST /000000000000/dummyQueue.fifo => 200
+2022-12-30T11:58:48.559  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:48.606  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:48.657  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:58:48.717  INFO --- [   asgi_gw_1] localstack.request.http    : POST /000000000000/dummyQueue => 200
+2022-12-30T11:58:48.798  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:48.850  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:58:48.903  INFO --- [   asgi_gw_0] localstack.request.http    : POST /000000000000/dummyQueue => 200
+2022-12-30T11:58:48.957  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:58:49.019  INFO --- [   asgi_gw_0] localstack.request.http    : POST /000000000000/testStandardQueue => 200
+2022-12-30T11:58:49.083  INFO --- [   asgi_gw_1] localstack.request.http    : POST /000000000000/testFifoQueue.fifo => 200
+2022-12-30T11:59:22.625  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:59:22.674  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:59:22.745  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:59:22.753  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:59:22.808  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:59:22.884  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:59:22.978  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:59:23.029  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:59:23.122  INFO --- [   asgi_gw_1] localstack.request.http    : POST /000000000000/dummyQueue => 200
+2022-12-30T11:59:23.184  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:59:23.249  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:59:23.366  INFO --- [   asgi_gw_0] localstack.request.http    : POST /000000000000/dummyQueue.fifo => 200
+2022-12-30T11:59:23.419  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:59:23.467  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:59:23.524  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:59:23.583  INFO --- [   asgi_gw_2] localstack.request.http    : POST /000000000000/dummyQueue => 200
+2022-12-30T11:59:23.670  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:59:23.722  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-12-30T11:59:23.793  INFO --- [   asgi_gw_1] localstack.request.http    : POST /000000000000/dummyQueue => 200
+2022-12-30T11:59:23.852  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-12-30T11:59:23.931  INFO --- [   asgi_gw_2] localstack.request.http    : POST /000000000000/testStandardQueue => 200
+2022-12-30T11:59:24.003  INFO --- [   asgi_gw_2] localstack.request.http    : POST /000000000000/testFifoQueue.fifo => 200
